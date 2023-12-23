@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    
+    <style>
+        h3 {
+        font-size: 2rem;
+        font-family: AlmarenaDisplayBold, sans-serif;
+        color: rgb(11, 30, 75);
+        line-height: 30px;
+        margin-bottom: 10px;
+        }
+        .sub-heading {
+        font-size: 1rem;
+        font-family: AlmarenaDisplayLight, sans-serif;
+        color: rgb(123, 123, 123);
+        line-height: 20px;
+        margin-bottom: 25px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px 0px;
+            background: rgb(106, 111, 245);
+            color: rgb(255, 255, 255);
+            font-family: Almarena, sans-serif;
+            display: flex;
+            border: none;
+            border-radius: 4px;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        button:hover {
+            background-color: #aeb4ae;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(32, 84, 210);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h3>Application Form</h3>
+        <span class="sub-heading">
+            Fill in your details
+        </span>
+        <div class="form">
+            <form>
+                <label for="first name">
+                    First Name
+                </label>
+                <input type="text" required placeholder="Enter first name">
+
+                <label for="last name">
+                    Last Name
+                </label>
+                <input type="text" required placeholder="Enter Last Name">
+
+                <label for="gender">
+                    Gender
+                </label>
+                <select name="gender" id="" aria-placeholder="select gender">
+                    <option value="male">
+                        Male
+                    </option>
+                    <option value="female">
+                        Female
+                    </option>
+                </select>
+
+                <label for="date">
+                    Date of Birth
+                </label>
+                <input type="date" required>
+
+                <label for="email">
+                    Email Address
+                </label>
+                <input type="email" required placeholder="Enter email Address">
+
+                <label for="education level">
+                    Education Level
+                </label>
+                <select name="education level" id="education" required aria-placeholder="Select level of education">
+                    <option value="bsc">
+                        Bsc
+                    </option>
+                    <option value="msc">
+                        Msc
+                    </option>
+                    <option value="diploma">
+                        Diploma
+                    </option>
+                    <option value="doctorate">
+                        Doctorate(PHD)
+                    </option>
+                    <option value="secondary">
+                        High-School/Secondary
+                    </option>
+                    <option value="undergraduate">
+                        Undergraduate
+                    </option>
+                </select>
+
+                <label for="country">
+                    Country
+                </label>
+                <select name="country" id="country" required aria-placeholder="Select your country">
+                    <option value="#">Country 1</option>
+                </select>
+
+                <label for="city">
+                    State/City of Residence
+                </label>
+                <input type="text" required>
+
+                <label for="employment">
+                    Employment Status
+                </label>
+                <select name="employment" id="" required aria-placeholder="Select employment Status">
+                    <option value="employed">
+                        employed
+                    </option>
+                    <option value="unemployed">
+                        unemployed
+                    </option>
+                    <option value="self-employed">
+                        self-employed
+                    </option>
+                </select>
+
+                <label for="phone">
+                    Phone Number
+                </label>
+                <input type="tel" required aria-placeholder="">
+
+                <label for="school">
+                    Choose School
+                </label>
+                <select name="school" id="" required aria-placeholder="Select School">
+                    <option value="engineering">
+                        engineering
+                    </option>
+                    <option value="data">
+                        data
+                    </option>
+                    <option value="business">
+                        business
+                    </option>
+                </select>
+
+
+                <label for="course">
+                    Choose Course of Study
+                </label>
+                <select name="course" id="" required aria-placeholder="Select course">
+                    <option value="employed">
+                        employed
+                    </option>
+                </select>
+
+
+                <label for="referal">
+                    How did you hear about us?
+                </label>
+                <select name="course" id="" required aria-placeholder="Select Channel">
+                    <option value="twitter">
+                        twitter
+                    </option>
+                    <option value="instagram">
+                        instagram
+                    </option>
+                    <option value="linkedin">
+                        linkedin
+                    </option>
+                </select>
+
+                <label for="discount">
+                    Scholarship/Discount Code(optional)
+                </label>
+                <input type="text" placeholder="Scholarship or student ID or discount">
+
+                <footer>
+                    <small>By clicking continue, I agree to <a href="#">Terms of Use</a> and acknowledge that I have read the
+                        <a href="#">Privacy Policy</a></small>
+                </footer>
+
+                <div class="submit">
+                    <button type="submit">
+                        Proceed
+                    </button>
+                </div>
+
+                <div>
+                    <small>
+                        Already have an account? <a href="./aboutMe.html">Sign In</a>
+                    </small>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
